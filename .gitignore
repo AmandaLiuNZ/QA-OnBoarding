@@ -340,10 +340,10 @@ ASALocalRun/
 healthchecksdb
 
 #MVP provided file
-.packages/
-.vs/
-.MarsQA-1/bin/
-.MarsQA-1/obj/
+packages/
+vs/
+MarsQA-1/bin/
+MarsQA-1/obj/
 MarsQA-1/Properties
 MarsQA-1/SpecflowPages/Helpers
 MarsQA-1/SpecflowPages/Utils
