@@ -156,6 +156,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Feature\Steps\AddLanguage.cs" />
+    <Compile Include="Feature\Steps\AddProfileDetail.cs" />
     <Compile Include="Feature\Steps\AddSkill.cs" />
     <Compile Include="Feature\Steps\Login.cs" />
     <Compile Include="Feature\Steps\UpdateAvailabilityType.cs" />
@@ -177,6 +178,7 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="Feature\AddLanguage.feature" />
+    <None Include="Feature\Task1_AddProfileDetail.feature" />
     <None Include="Feature\AddSkill.feature" />
     <None Include="Feature\Login.feature" />
     <None Include="Feature\UpdateAvailabilityType.feature" />
