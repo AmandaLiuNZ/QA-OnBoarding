@@ -156,7 +156,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Feature\Steps\AddLanguage.cs" />
-    <Compile Include="Feature\Steps\AddProfileDetail.cs" />
     <Compile Include="Feature\Steps\AddSkill.cs" />
     <Compile Include="Feature\Steps\Login.cs" />
     <Compile Include="Feature\Steps\UpdateAvailabilityType.cs" />
