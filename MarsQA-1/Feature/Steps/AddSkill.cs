@@ -12,8 +12,8 @@ namespace MarsQA_1.Feature
 
         SkillPage addSkillPage = new SkillPage(driver);
 
-        [Given(@"click Skills Link")]
-        public void GivenClickSkillsLink()
+        [When(@"click Skills Link")]
+        public void WhenClickSkillsLink()
         {
             addSkillPage.Click(_skills);
         }
@@ -30,5 +30,18 @@ namespace MarsQA_1.Feature
             addSkillPage.AssertSkillAdded();
 
         }
+
+        [When(@"seller add new skill as ""(.*)"" and level as ""(.*)""")]
+        public void WhenSellerAddNewSkillAsAndLevelAs(string skillname, string level)
+        {
+            addSkillPage.AddSkill(skillname,level);
+        }
+
+        [Then(@"""(.*)"" should be added to your skills\.""(.*)"" will be displayed on top right of the application")]
+        public void ThenShouldBeAddedToYourSkills_WillBeDisplayedOnTopRightOfTheApplication(string skill, string message)
+        {
+            addSkillPage.AssertSkillAdded(skill,message);
+        }
+
     }
 }

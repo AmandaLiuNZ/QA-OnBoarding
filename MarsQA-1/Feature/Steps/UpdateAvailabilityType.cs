@@ -22,5 +22,17 @@ namespace MarsQA_1.Feature
             profilePage.AssertAvailabilityType();
         }
 
+        [When(@"seller select Availability as ""(.*)""")]
+        public void WhenSellerSelectAvailabilityAs(string availabilityType)
+        {
+            profilePage.UpdateAvailabilityType(availabilityType);
+        }
+
+        [Then(@"Availability should be ""(.*)""\. Alert message ""(.*)"" will be displayed on top right of the application")]
+        public void ThenAvailabilityShouldBe_AlertMessageWillBeDisplayedOnTopRightOfTheApplication(string availabilityType, string message)
+        {
+            profilePage.AssertAvailabilityType(availabilityType, message);
+        }
+
     }
 }

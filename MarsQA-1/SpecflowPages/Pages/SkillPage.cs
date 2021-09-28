@@ -50,6 +50,19 @@ namespace MarsQA_1.SpecflowPages.Pages
 
             Click(_skillAddbutton);
         }
+        public void AddSkill(string newSkillName, string newSkillLevel)
+        {
+            IList<IWebElement> listOfElements = driver.FindElements(_skillList);
+            skillCount = listOfElements.Count;
+
+            Click(_addnewskillbutton);
+
+            Type(_skillname, newSkillName);
+            Type(_skilllevel, newSkillLevel);
+
+            Click(_skillAddbutton);
+        }
+
         public void AssertSkillAdded()
         {
             string actualMsg;
@@ -65,6 +78,23 @@ namespace MarsQA_1.SpecflowPages.Pages
                 TestContext.WriteLine(newSkill);
 
                 expectedMsg = newSkillName + " has been added to your skills";
+                actualMsg = Find(_nsbox).Text;
+                Assert.AreEqual(actualMsg, expectedMsg);
+            }
+        }
+
+        public void AssertSkillAdded(string newSkill,string expectedMsg)
+        {
+            string actualMsg;
+
+            if (IsDisplayed(_nsbox))
+            {
+                IList<IWebElement> listOfElements = driver.FindElements(_skillList);
+                skillCount = listOfElements.Count;
+
+                Assert.AreEqual(listOfElements[skillCount - 1].Text, newSkill+"   ");
+                TestContext.WriteLine(newSkill);
+
                 actualMsg = Find(_nsbox).Text;
                 Assert.AreEqual(actualMsg, expectedMsg);
             }
