@@ -285,7 +285,7 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 35
- testRunner.Given("seller is on profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I am on profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 36
  testRunner.When("seller select Availability as \"Part Time\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -330,7 +330,7 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 41
- testRunner.Given("seller is on profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I am on profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 42
  testRunner.When("seller select Availability as \"Full Time\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -375,7 +375,7 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 47
- testRunner.Given("seller is on profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I am on profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 48
  testRunner.When("seller select Hours as \"Less than 30hours a week\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -420,7 +420,7 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 53
- testRunner.Given("seller is on profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I am on profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 54
  testRunner.When("seller select Hours as \"More than 30hours a week\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -465,7 +465,7 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 59
- testRunner.Given("seller is on profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I am on profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 60
  testRunner.When("seller select Hours as \"As needed\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -510,7 +510,7 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 66
- testRunner.Given("seller is on profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I am on profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 67
  testRunner.When("seller select Earn Target as \"Less than $500 per month\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -555,7 +555,7 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 72
- testRunner.Given("seller is on profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I am on profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 73
  testRunner.When("seller select Earn Target as \"Between $500 and $1000 per month\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -600,7 +600,7 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 78
- testRunner.Given("seller is on profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I am on profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 79
  testRunner.When("seller select Earn Target as \"More than $1000 per month\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -645,7 +645,7 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 85
- testRunner.Given("seller is on profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I am on profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 86
  testRunner.When("seller enter Description as \"10 years tester experience\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -694,7 +694,7 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 92
- testRunner.Given("seller is on profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I am on profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 93
  testRunner.When("seller clear Description", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -1459,21 +1459,17 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 212
- testRunner.Given("seller is on skills page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I am on profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 213
- testRunner.When("seller enter skill as \"Postman\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+    testRunner.When("click Skills Link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 214
- testRunner.And("select level as \"Intermediate\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("seller add new skill as \"Postman\" and level as \"Intermediate\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 215
- testRunner.And("clicks on Add action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 216
- testRunner.Then("\"Postman Intermediate\" should be added to your profile. The alert message,\"Postma" +
-                        "n has been added to your skills\" will be displayed on top right of the applicati" +
-                        "on", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("\"Postman Intermediate\" should be added to your skills.\"Postman has been added to " +
+                        "your skills\" will be displayed on top right of the application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -1490,7 +1486,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "Skills"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("31 Test Add Skills successfully", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 219
+#line 218
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -1510,21 +1506,18 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
+#line 219
+ testRunner.Given("I am on profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
 #line 220
- testRunner.Given("seller is on skills page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+    testRunner.When("click Skills Link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 221
- testRunner.When("seller enter skill as \"Selenium\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.And("seller add new skill as \"Selenium\" and level as \"Expert\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 222
- testRunner.And("select level as \"Expert\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 223
- testRunner.And("clicks on Add action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 224
- testRunner.Then("\"Selenium Expert\" should be added to your profile. The alert message,\"Selenium ha" +
-                        "s been added to your skills\" will be displayed on top right of the application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("\"Selenium Expert\" should be added to your skills.\"Selenium has been added to your" +
+                        " skills\" will be displayed on top right of the application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -1541,7 +1534,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "Skills"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("32 Test listing skills", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 227
+#line 225
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -1561,13 +1554,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
+#line 226
+ testRunner.Given("I am on profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 227
+    testRunner.When("click Skills Link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
 #line 228
- testRunner.Given("seller is on skills page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 229
- testRunner.When("seller clicks on skills tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 230
  testRunner.Then("skills page should display the list of skills that were added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -1585,7 +1578,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "Skills"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("33 Test update Skill level successfully", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 233
+#line 231
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -1605,19 +1598,22 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
+#line 232
+ testRunner.Given("I am on profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 233
+    testRunner.When("click Skills Link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
 #line 234
- testRunner.Given("seller is on skills page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.And("click update button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 235
- testRunner.When("seller enter skill as \"Selenium\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.And("seller update skill level as \"Beginner\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 236
- testRunner.And("select level as \"Beginner\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 237
  testRunner.And("clicks on update action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 238
+#line 237
  testRunner.Then("\"Selenium Beginner\" should be updated to your profile.The alert message,\"Selenium" +
                         " has been updated to your skills\" will be displayed on top right of the applicat" +
                         "ion", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -1637,7 +1633,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "Skills"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("34 Test update to new skills successfully", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 241
+#line 240
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -1657,11 +1653,14 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
+#line 241
+ testRunner.Given("I am on profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
 #line 242
- testRunner.Given("seller is on skills page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+    testRunner.When("click Skills Link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 243
- testRunner.When("seller update \"Selenium\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.And("click update button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 244
  testRunner.And("enter skill name as \"python\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -1709,21 +1708,24 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 250
- testRunner.Given("seller is on skills page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I am on profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 251
- testRunner.When("seller update \"Selenium\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+    testRunner.When("click Skills Link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 252
- testRunner.And("enter skill name \"Java\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("seller update \"Selenium\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 253
- testRunner.And("select level as \"Beginner\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("enter skill name \"Java\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 254
- testRunner.And("clicks on update action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("select level as \"Beginner\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 255
+ testRunner.And("clicks on update action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 256
  testRunner.Then("Alert message,\"This skill has already added to your skill list\" will be displayed" +
                         " on top right of the application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -1742,7 +1744,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "Skills!!!bug!!!!!!"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("36 Test error message when update to exist skill different level", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 258
+#line 259
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -1762,22 +1764,25 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 259
- testRunner.Given("seller is on skills page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
 #line 260
- testRunner.When("seller update \"Selenium\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.Given("I am on profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 261
- testRunner.And("enter skill name \"Java\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+    testRunner.When("click Skills Link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 262
- testRunner.And("select level as \"Expert\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("seller update \"Selenium\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 263
- testRunner.And("clicks on update action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("enter skill name \"Java\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 264
+ testRunner.And("select level as \"Expert\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 265
+ testRunner.And("clicks on update action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 266
  testRunner.Then("Alert message,\"This skill has already added to your skill list\" will be displayed" +
                         " on top right of the application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -1796,7 +1801,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "Skills"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("37 Test Delete Skill successfully", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 267
+#line 269
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -1816,13 +1821,16 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 268
- testRunner.Given("seller is on skills page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 269
- testRunner.When("seller delete skill \"Selenium\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
 #line 270
+ testRunner.Given("I am on profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 271
+    testRunner.When("click Skills Link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 272
+ testRunner.And("seller delete skill \"Selenium\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 273
  testRunner.Then("\"Selenium\" should be deleted.The alert message,\"Selenium has been deleted\" will b" +
                         "e displayed on top right of the application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -1841,7 +1849,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "Skills"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("38 Test error message when skill is not entered", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 273
+#line 276
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -1861,19 +1869,22 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 274
- testRunner.Given("seller is on skills page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 275
- testRunner.When("seller do not enter value in skill text box", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 276
- testRunner.And("select level as \"Beginner\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
 #line 277
- testRunner.And("clicks on Add action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Given("I am on profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 278
+    testRunner.When("click Skills Link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 279
+ testRunner.And("seller do not enter value in skill text box", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 280
+ testRunner.And("select level as \"Beginner\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 281
+ testRunner.And("clicks on Add action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 282
  testRunner.Then("Alert message,\"please enter skill and experience level\" will be displayed on top " +
                         "right of the application. No skill is added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -1892,7 +1903,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "Skills"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("39 Test error message when level is not selected", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 281
+#line 285
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -1912,19 +1923,22 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 282
- testRunner.Given("seller is on skills page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 286
+ testRunner.Given("I am on profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 283
- testRunner.When("seller enter skill as \"Selenium\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 287
+    testRunner.When("click Skills Link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 284
+#line 288
+ testRunner.And("seller enter skill as \"Selenium\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 289
  testRunner.And("do not select level", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 285
+#line 290
  testRunner.And("clicks on Add action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 286
+#line 291
  testRunner.Then("Alert message,\"please enter skill and experience level\" will be displayed on top " +
                         "right of the application. No skill is added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -1943,7 +1957,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "Skills"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("40 Test error message when same skill different level is added", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 289
+#line 294
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -1963,19 +1977,22 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 290
- testRunner.Given("seller is on skills page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 295
+ testRunner.Given("I am on profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 291
- testRunner.When("seller enter skill as \"Postman\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 296
+    testRunner.When("click Skills Link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 292
+#line 297
+ testRunner.And("seller enter skill as \"Postman\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 298
  testRunner.And("select level as \"Expert\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 293
+#line 299
  testRunner.And("clicks on Add action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 294
+#line 300
  testRunner.Then("Alert message,\"Duplicated data\" will be displayed on top right of the application" +
                         ". No skill is added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -1994,7 +2011,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "Skills"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("41 Test error message when same skill same level is added", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 297
+#line 303
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -2014,19 +2031,22 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 298
- testRunner.Given("seller is on skills page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 304
+ testRunner.Given("I am on profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 299
- testRunner.When("seller enter skill as \"Postman\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 305
+    testRunner.When("click Skills Link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 300
+#line 306
+ testRunner.And("seller enter skill as \"Postman\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 307
  testRunner.And("select level as \"Intermediate\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 301
+#line 308
  testRunner.And("clicks on Add action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 302
+#line 309
  testRunner.Then("Alert message,\"This skill is already exist in your skill list\" will be displayed " +
                         "on top right of the application.No skill is added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -2045,7 +2065,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "Education"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("42 Test Add Education successfully", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 306
+#line 313
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -2065,28 +2085,28 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 307
+#line 314
  testRunner.Given("seller is on Education page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 308
+#line 315
  testRunner.When("seller enter college name as \"Cambridge University\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 309
+#line 316
  testRunner.And("select country as \"United Kingdom\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 310
+#line 317
  testRunner.And("select title as \"PHD\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 311
+#line 318
  testRunner.And("enter Degree as \"Bachelor\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 312
+#line 319
  testRunner.And("select Year of graduation as \"2004\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 313
+#line 320
  testRunner.And("clicks on Add action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 314
+#line 321
  testRunner.Then("education should be added to your profile.The alert message,\"Education has been a" +
                         "dded\" will be displayed on top right of the application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -2105,7 +2125,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "Education"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("43 Test Add Education successfully", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 317
+#line 324
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -2125,28 +2145,28 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 318
+#line 325
  testRunner.Given("seller is on Education page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 319
+#line 326
  testRunner.When("seller enter college name as \"Oxford University\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 320
+#line 327
  testRunner.And("select country as \"United States\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 321
+#line 328
  testRunner.And("select title as \"BA\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 322
+#line 329
  testRunner.And("enter Degree as \"Master\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 323
+#line 330
  testRunner.And("select Year of graduation as \"2008\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 324
+#line 331
  testRunner.And("clicks on Add action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 325
+#line 332
  testRunner.Then("education should be added to your profile.The alert message,\"Education has been a" +
                         "dded\" will be displayed on top right of the application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -2165,7 +2185,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "Education"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("44 Test listing Education", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 328
+#line 335
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -2185,13 +2205,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 329
+#line 336
  testRunner.Given("seller is on Education page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 330
+#line 337
  testRunner.When("seller clicks on Education tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 331
+#line 338
  testRunner.Then("education page should display the list of education that were added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -2209,7 +2229,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "Education"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("45 Test Delete Education successfully", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 334
+#line 341
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -2229,13 +2249,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 335
+#line 342
  testRunner.Given("seller is on Education page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 336
+#line 343
  testRunner.When("seller delete Education \"Cambridge\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 337
+#line 344
  testRunner.Then("\"Cambridge\" should be deleted.The alert message,\"Education entry successfully rem" +
                         "oved\" will be displayed on top right of the application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -2254,7 +2274,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "Education"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("46 Test error message when college is not entered", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 340
+#line 347
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -2274,28 +2294,28 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 341
+#line 348
  testRunner.Given("seller is on Education page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 342
+#line 349
  testRunner.When("seller do not enter college name", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 343
+#line 350
  testRunner.And("select country as \"United States\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 344
+#line 351
  testRunner.And("select title as \"BA\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 345
+#line 352
  testRunner.And("enter Degree as \"Master\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 346
+#line 353
  testRunner.And("select Year of graduation as \"2008\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 347
+#line 354
  testRunner.And("clicks on Add action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 348
+#line 355
  testRunner.Then("Alert message,\"Please enter all the fields\" will be displayed on top right of the" +
                         " application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -2314,7 +2334,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "Education"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("47 Test error message when Country is not selected", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 351
+#line 358
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -2334,28 +2354,28 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 352
+#line 359
  testRunner.Given("seller is on Education page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 353
+#line 360
  testRunner.When("seller enter college name as \"Oxford University\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 354
+#line 361
  testRunner.And("do not select country", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 355
+#line 362
  testRunner.And("select title as \"BA\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 356
+#line 363
  testRunner.And("enter Degree as \"Master\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 357
+#line 364
  testRunner.And("select Year of graduation as \"2008\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 358
+#line 365
  testRunner.And("clicks on Add action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 359
+#line 366
  testRunner.Then("Alert message,\"Please enter all the fields\" will be displayed on top right of the" +
                         " application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -2374,7 +2394,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "Education!!!bug!!!!!"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("48 Test error message when title is not selected", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 362
+#line 369
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -2394,28 +2414,28 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 363
+#line 370
  testRunner.Given("seller is on Education page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 364
+#line 371
  testRunner.When("seller enter college name as \"Oxford University\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 365
+#line 372
  testRunner.And("select country as \"United States\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 366
+#line 373
  testRunner.And("do not select title", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 367
+#line 374
  testRunner.And("enter Degree as \"Master\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 368
+#line 375
  testRunner.And("select Year of graduation as \"2008\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 369
+#line 376
  testRunner.And("clicks on Add action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 370
+#line 377
  testRunner.Then("Alert message,\"Please enter all the fields\" will be displayed on top right of the" +
                         " application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -2434,7 +2454,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "Education"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("49 Test error message when Degree is not entered", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 373
+#line 380
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -2454,28 +2474,28 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 374
+#line 381
  testRunner.Given("seller is on Education page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 375
+#line 382
  testRunner.When("seller enter college name as \"Oxford University\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 376
+#line 383
  testRunner.And("select country as \"United States\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 377
+#line 384
  testRunner.And("select title as \"BA\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 378
+#line 385
  testRunner.And("do not enter degree", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 379
+#line 386
  testRunner.And("select Year of graduation as \"2008\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 380
+#line 387
  testRunner.And("clicks on Add action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 381
+#line 388
  testRunner.Then("Alert message,\"Please enter all the fields\" will be displayed on top right of the" +
                         " application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -2494,7 +2514,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "Education"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("50 Test error message when year of graduation is not selected", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 384
+#line 391
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -2514,28 +2534,28 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 385
+#line 392
  testRunner.Given("seller is on Education page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 386
+#line 393
  testRunner.When("seller enter college name as \"Oxford University\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 387
+#line 394
  testRunner.And("select country as \"United States\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 388
+#line 395
  testRunner.And("select title as \"BA\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 389
+#line 396
  testRunner.And("enter Degree as \"Master\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 390
+#line 397
  testRunner.And("do not select year of graduation", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 391
+#line 398
  testRunner.And("clicks on Add action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 392
+#line 399
  testRunner.Then("Alert message,\"Please enter all the fields\" will be displayed on top right of the" +
                         " application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -2554,7 +2574,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "Education"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("51 Test listing Education", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 395
+#line 402
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -2574,13 +2594,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 396
+#line 403
  testRunner.Given("seller is on Education page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 397
+#line 404
  testRunner.When("seller clicks on Education tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 398
+#line 405
  testRunner.Then("Education page should display the list of education that were added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -2598,54 +2618,6 @@ this.ScenarioInitialize(scenarioInfo);
                     "Education"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("52 Test update college name successfully", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 401
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 402
- testRunner.Given("seller is on Education page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 403
- testRunner.When("seller update to new college name", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 404
- testRunner.And("clicks on Update action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 405
- testRunner.Then("education be updated.Alert message,\"Education has been updated\" will be displayed" +
-                        " on top right of the application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("53 Test error message when update to same education")]
-        [NUnit.Framework.IgnoreAttribute("Ignored scenario")]
-        [NUnit.Framework.CategoryAttribute("Education")]
-        public virtual void _53TestErrorMessageWhenUpdateToSameEducation()
-        {
-            string[] tagsOfScenario = new string[] {
-                    "ignore",
-                    "Education"};
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("53 Test error message when update to same education", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 408
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -2670,30 +2642,30 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.Given("seller is on Education page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 410
- testRunner.When("seller update to same education", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("seller update to new college name", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 411
  testRunner.And("clicks on Update action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 412
- testRunner.Then("Alert message \"This information is already exist\" will be displayed on top right " +
-                        "of the application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("education be updated.Alert message,\"Education has been updated\" will be displayed" +
+                        " on top right of the application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("54 Test delete education successfully")]
+        [NUnit.Framework.DescriptionAttribute("53 Test error message when update to same education")]
         [NUnit.Framework.IgnoreAttribute("Ignored scenario")]
         [NUnit.Framework.CategoryAttribute("Education")]
-        public virtual void _54TestDeleteEducationSuccessfully()
+        public virtual void _53TestErrorMessageWhenUpdateToSameEducation()
         {
             string[] tagsOfScenario = new string[] {
                     "ignore",
                     "Education"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("54 Test delete education successfully", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("53 Test error message when update to same education", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 415
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -2718,28 +2690,31 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.Given("seller is on Education page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 417
- testRunner.When("seller delete education", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("seller update to same education", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 418
-    testRunner.Then("Alert message \"Education entry successfully removed\" will be displayed on top rig" +
-                        "ht of the application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.And("clicks on Update action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 419
+ testRunner.Then("Alert message \"This information is already exist\" will be displayed on top right " +
+                        "of the application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("55 Test Add Certifications successfully")]
+        [NUnit.Framework.DescriptionAttribute("54 Test delete education successfully")]
         [NUnit.Framework.IgnoreAttribute("Ignored scenario")]
-        [NUnit.Framework.CategoryAttribute("Certifications")]
-        public virtual void _55TestAddCertificationsSuccessfully()
+        [NUnit.Framework.CategoryAttribute("Education")]
+        public virtual void _54TestDeleteEducationSuccessfully()
         {
             string[] tagsOfScenario = new string[] {
                     "ignore",
-                    "Certifications"};
+                    "Education"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("55 Test Add Certifications successfully", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 421
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("54 Test delete education successfully", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 422
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -2759,22 +2734,67 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 422
- testRunner.Given("seller is on Certification page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
 #line 423
- testRunner.When("seller enter certification name as \"Test Foundation\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.Given("seller is on Education page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 424
- testRunner.And("enter certified from \"ISTQB\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When("seller delete education", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 425
+    testRunner.Then("Alert message \"Education entry successfully removed\" will be displayed on top rig" +
+                        "ht of the application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("55 Test Add Certifications successfully")]
+        [NUnit.Framework.IgnoreAttribute("Ignored scenario")]
+        [NUnit.Framework.CategoryAttribute("Certifications")]
+        public virtual void _55TestAddCertificationsSuccessfully()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "ignore",
+                    "Certifications"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("55 Test Add Certifications successfully", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 428
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 429
+ testRunner.Given("seller is on Certification page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 430
+ testRunner.When("seller enter certification name as \"Test Foundation\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 431
+ testRunner.And("enter certified from \"ISTQB\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 432
  testRunner.And("select Year of as \"2021\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 426
+#line 433
  testRunner.And("clicks on Add action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 427
+#line 434
  testRunner.Then("certification should be added to your profile.The alert message,\"Test Foundation " +
                         "has been added to your certification\" will be displayed on top right of the appl" +
                         "ication", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -2794,7 +2814,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "Certifications"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("56 Test Error message when do not enter certification name", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 430
+#line 437
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -2814,22 +2834,22 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 431
+#line 438
  testRunner.Given("seller is on Certification page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 432
+#line 439
  testRunner.When("seller do not enter certification name", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 433
+#line 440
  testRunner.And("enter certified from \"ISTQB\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 434
+#line 441
  testRunner.And("select Year of as \"2021\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 435
+#line 442
  testRunner.And("clicks on Add action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 436
+#line 443
  testRunner.Then("The alert message,\"Please enter Certification name,Certification from and Certifi" +
                         "cation year\" will be displayed on top right of the application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -2848,7 +2868,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "Certifications"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("57 Test Error message when do not enter certification from", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 439
+#line 446
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -2868,22 +2888,22 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 440
+#line 447
  testRunner.Given("seller is on Certification page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 441
+#line 448
  testRunner.When("seller enter certification name as \"Test Foundation\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 442
+#line 449
  testRunner.And("do not enter certification from", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 443
+#line 450
  testRunner.And("select Year of as \"2021\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 444
+#line 451
  testRunner.And("clicks on Add action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 445
+#line 452
  testRunner.Then("The alert message,\"Please enter Certification name,Certification from and Certifi" +
                         "cation year\" will be displayed on top right of the application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -2902,7 +2922,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "Certifications"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("58 Test Error message when do not select certification year", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 448
+#line 455
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -2922,22 +2942,22 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 449
+#line 456
  testRunner.Given("seller is on Certification page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 450
+#line 457
  testRunner.When("seller enter certification name as \"Test Foundation\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 451
+#line 458
  testRunner.And("do not enter certification from", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 452
+#line 459
  testRunner.And("select Year of as \"2021\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 453
+#line 460
  testRunner.And("clicks on Add action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 454
+#line 461
  testRunner.Then("The alert message,\"Please enter Certification name,Certification from and Certifi" +
                         "cation year\" will be displayed on top right of the application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -2956,7 +2976,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "Certifications"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("59 Test Error message when add same certification name and from different year", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 457
+#line 464
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -2976,22 +2996,22 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 458
+#line 465
  testRunner.Given("seller is on Certification page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 459
+#line 466
  testRunner.When("seller enter same certification name", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 460
+#line 467
  testRunner.And("enter same certification from", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 461
+#line 468
  testRunner.And("select different year", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 462
+#line 469
  testRunner.And("clicks on Add action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 463
+#line 470
  testRunner.Then("The alert message,\"Duplicated data\" will be displayed on top right of the applica" +
                         "tion", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -3010,7 +3030,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "Certifications"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("60 Test Error message when add the same certification", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 466
+#line 473
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -3030,22 +3050,22 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 467
+#line 474
  testRunner.Given("seller is on Certification page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 468
+#line 475
  testRunner.When("seller enter same certification name", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 469
+#line 476
  testRunner.And("enter same certification from", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 470
+#line 477
  testRunner.And("select same year", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 471
+#line 478
  testRunner.And("clicks on Add action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 472
+#line 479
  testRunner.Then("The alert message,\"The information is already exist\" will be displayed on top rig" +
                         "ht of the application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -3064,54 +3084,6 @@ this.ScenarioInitialize(scenarioInfo);
                     "Certifications"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("61 Test update certification name", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 475
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 476
- testRunner.Given("seller is on Certification page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 477
- testRunner.When("seller update certification name as \"software engineer\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 478
- testRunner.And("clicks on Update action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 479
- testRunner.Then("The alert message,\"software engineer has been updated to your certification\" will" +
-                        " be displayed on top right of the application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("62 Test delete certification successfully")]
-        [NUnit.Framework.IgnoreAttribute("Ignored scenario")]
-        [NUnit.Framework.CategoryAttribute("Certifications")]
-        public virtual void _62TestDeleteCertificationSuccessfully()
-        {
-            string[] tagsOfScenario = new string[] {
-                    "ignore",
-                    "Certifications"};
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("62 Test delete certification successfully", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 482
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -3136,9 +3108,57 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.Given("seller is on Certification page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 484
- testRunner.When("seller delete \"software engineer\" certification", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("seller update certification name as \"software engineer\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 485
+ testRunner.And("clicks on Update action button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 486
+ testRunner.Then("The alert message,\"software engineer has been updated to your certification\" will" +
+                        " be displayed on top right of the application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("62 Test delete certification successfully")]
+        [NUnit.Framework.IgnoreAttribute("Ignored scenario")]
+        [NUnit.Framework.CategoryAttribute("Certifications")]
+        public virtual void _62TestDeleteCertificationSuccessfully()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "ignore",
+                    "Certifications"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("62 Test delete certification successfully", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 489
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 490
+ testRunner.Given("seller is on Certification page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 491
+ testRunner.When("seller delete \"software engineer\" certification", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 492
     testRunner.Then("The alert message,\"software engineer has been deleted from your certification\" wi" +
                         "ll be displayed on top right of the application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden

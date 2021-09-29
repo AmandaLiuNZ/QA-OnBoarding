@@ -36,19 +36,7 @@ namespace MarsQA_1.SpecflowPages.Pages
             Find(locator).SendKeys(inputText);
         }
 
-        public bool IsDisplayed(By locator)
-        {
-            try
-            {
-                return Find(locator).Displayed;
-            }
-            catch (OpenQA.Selenium.NoSuchElementException)
-            {
-                return false;
-            }
-        }
-
-        public bool IsDisplayed(By locator, int maxWaitTime)
+        public bool IsDisplayed(By locator, int maxWaitTime=10)
         {
             try
             {

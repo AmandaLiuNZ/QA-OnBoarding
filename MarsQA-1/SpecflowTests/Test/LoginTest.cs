@@ -24,14 +24,9 @@ namespace MarsQA_1.SpecflowTests.Test
         [Test]
         public void MyLogin()
         {
-            string user;
             ProfilePage profilePage = new ProfilePage(driver);
             profilePage.Visit("http://localhost:5000/");
             profilePage.Login();
-
-            user = profilePage.GetUsername();
-//            Assert.AreEqual(user, "Amanda Liu");
-
         }
     }
 }

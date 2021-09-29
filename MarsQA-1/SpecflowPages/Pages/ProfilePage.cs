@@ -38,7 +38,6 @@ namespace MarsQA_1.SpecflowPages.Pages
         public ProfilePage(IWebDriver driver) : base(driver)
         {
             this.driver = driver;
-            //    Visit("http://localhost:5000/");
         }
 
         public void Login()

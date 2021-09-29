@@ -25,6 +25,11 @@ namespace MarsQA_1.SpecflowPages.Pages
         string newSkillName;
         string newSkillLevel;
 
+        private const string FileName = @"MarsQA-1\SpecflowTests\Data\Data.xlsx";
+        private const string SheetName = "Skill";
+        private const string SkillName = "Skill";
+        private const string SkillLevel = "Level";
+
         public SkillPage(IWebDriver driver) : base(driver)
         {
             this.driver = driver;
@@ -37,16 +42,12 @@ namespace MarsQA_1.SpecflowPages.Pages
 
             Click(_addnewskillbutton);
 
-            ExcelLibHelper.PopulateInCollection(@"MarsQA-1\SpecflowTests\Data\Data.xlsx", "Skill");
-            newSkillName = ExcelLibHelper.ReadData(skillCount + 2, "Skill");
-            newSkillLevel = ExcelLibHelper.ReadData(skillCount + 2, "Level");
+            ExcelLibHelper.PopulateInCollection(FileName, SheetName);
+            newSkillName = ExcelLibHelper.ReadData(skillCount + 2, SkillName);
+            newSkillLevel = ExcelLibHelper.ReadData(skillCount + 2, SkillLevel);
 
             Type(_skillname, newSkillName);
             Type(_skilllevel, newSkillLevel);
-
-            //var dropdown = Find(_languagelevel);
-            //var selectElement = new SelectElement(dropdown);
-            //selectElement.SelectByIndex(level);
 
             Click(_skillAddbutton);
         }

@@ -27,6 +27,11 @@ namespace MarsQA_1.SpecflowPages.Pages
         string newLanguageName;
         string newLanguageLevel;
 
+        private const string DataFileName = @"MarsQA-1\SpecflowTests\Data\Data.xlsx";
+        private const string SheetName = "Language";
+        private const string LanguageName = "Language";
+        private const string LanguageLevel = "Level";
+
         public LanguagePage(IWebDriver driver) : base(driver)
         {
             this.driver = driver;
@@ -34,10 +39,10 @@ namespace MarsQA_1.SpecflowPages.Pages
 
         public void AddLanguageFromExcel(int language_row, int level)
         {
-            ExcelLibHelper.PopulateInCollection(@"MarsQA-1\SpecflowTests\Data\Data.xlsx", "Language");
+            ExcelLibHelper.PopulateInCollection(DataFileName, SheetName);
 
-            newLanguageName = ExcelLibHelper.ReadData(language_row + 1, "Language");
-            newLanguageLevel = ExcelLibHelper.ReadData(language_row + 1, "Level");
+            newLanguageName = ExcelLibHelper.ReadData(language_row + 1, LanguageName);
+            newLanguageLevel = ExcelLibHelper.ReadData(language_row + 1, LanguageLevel);
 
             Type(_languagename, newLanguageName);
             Type(_languagelevel, newLanguageLevel);
@@ -112,7 +117,7 @@ namespace MarsQA_1.SpecflowPages.Pages
         public void AssertLaguageAdded(string newLanguage, string expectedMsg)
         {
 
-            IsDisplayed(_nsbox);
+            IsDisplayed(_nsbox,10);
             string actualMsg;
 
             IList<IWebElement> listOfElements = driver.FindElements(_languageList);
