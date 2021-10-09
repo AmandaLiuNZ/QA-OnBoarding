@@ -27,34 +27,22 @@ namespace MarsQA_1.SpecflowPages.Pages
         string newLanguageName;
         string newLanguageLevel;
 
+        private const string DataFileName = @"MarsQA-1\SpecflowTests\Data\Data.xlsx";
+        private const string SheetName = "Language";
+        private const string LanguageName = "Language";
+        private const string LanguageLevel = "Level";
+
         public LanguagePage(IWebDriver driver) : base(driver)
         {
             this.driver = driver;
         }
 
-        public void AddLanguage(string lName, int level)
-        {
-            if (IsDisplayed(_languageTextLink, 10))
-            {
-                Click(_languageTextLink);
-                Click(_addnewbutton);
-                Type(_languagename, lName);
-
-                Click(_languagelevel);
-                var dropdown = Find(_languagelevel);
-                var selectElement = new SelectElement(dropdown);
-                selectElement.SelectByIndex(level);
-
-                Click(_languageAddbutton);
-            }
-        }
-
         public void AddLanguageFromExcel(int language_row, int level)
         {
-            ExcelLibHelper.PopulateInCollection(@"MarsQA-1\SpecflowTests\Data\Data.xlsx", "Language");
+            ExcelLibHelper.PopulateInCollection(DataFileName, SheetName);
 
-            newLanguageName = ExcelLibHelper.ReadData(language_row + 1, "Language");
-            newLanguageLevel = ExcelLibHelper.ReadData(language_row + 1, "Level");
+            newLanguageName = ExcelLibHelper.ReadData(language_row + 1, LanguageName);
+            newLanguageLevel = ExcelLibHelper.ReadData(language_row + 1, LanguageLevel);
 
             Type(_languagename, newLanguageName);
             Type(_languagelevel, newLanguageLevel);
@@ -67,6 +55,17 @@ namespace MarsQA_1.SpecflowPages.Pages
 
         }
 
+        public void AddLanguageFromScenario(string language,string level)
+        {
+            newLanguageName = language;
+            newLanguageLevel = level;
+
+            Type(_languagename, newLanguageName);
+            Type(_languagelevel, newLanguageLevel);
+
+            Click(_languageAddbutton);
+        }
+
         public void ProfileLanguageUpdate()
         {
             IList<IWebElement> listOfElements = driver.FindElements(_languageList);
@@ -77,6 +76,20 @@ namespace MarsQA_1.SpecflowPages.Pages
             {
                 Click(_addnewlanguagebutton);
                 AddLanguageFromExcel(languageCount + 1, languageCount + 1);
+                languageCount++;
+            }
+        }
+
+        public void ProfileLanguageUpdate(string language, string level)
+        {
+            IList<IWebElement> listOfElements = driver.FindElements(_languageList);
+            languageCount = listOfElements.Count;
+
+            newLanguageName = "";
+            if (languageCount < 4)
+            {
+                Click(_addnewlanguagebutton);
+                AddLanguageFromScenario(language,level);
                 languageCount++;
             }
         }
@@ -96,6 +109,24 @@ namespace MarsQA_1.SpecflowPages.Pages
                 TestContext.WriteLine(newLanguage);
 
                 expectedMsg = newLanguageName + " has been added to your languages";
+                actualMsg = Find(_nsbox).Text;
+                Assert.AreEqual(actualMsg, expectedMsg);
+            }
+
+        }
+        public void AssertLaguageAdded(string newLanguage, string expectedMsg)
+        {
+
+            IsDisplayed(_nsbox,10);
+            string actualMsg;
+
+            IList<IWebElement> listOfElements = driver.FindElements(_languageList);
+
+            if (newLanguageName != "")
+            {
+                Assert.AreEqual(newLanguage+"   ", listOfElements[languageCount - 1].Text);
+                TestContext.WriteLine(newLanguage);
+
                 actualMsg = Find(_nsbox).Text;
                 Assert.AreEqual(actualMsg, expectedMsg);
             }

@@ -20,8 +20,8 @@ namespace MarsQA_1.Feature
             addLanguagePage.IsTextDisplayed(_username, 10);
         }
 
-        [Given(@"click Languages Link")]
-        public void GivenClickLanguagesLink()
+        [When(@"click Languages Link")]
+        public void WhenClickLanguagesLink()
         {
             addLanguagePage.Click(_languageTextLink);
         }
@@ -38,5 +38,18 @@ namespace MarsQA_1.Feature
             addLanguagePage.AssertLaguageAdded();
 
         }
+
+        [When(@"add new language as ""(.*)"" and level as ""(.*)""")]
+        public void WhenAddNewLanguageAsAndLevelAs(string newLanguage, string level)
+        {
+            addLanguagePage.ProfileLanguageUpdate(newLanguage, level);
+        }
+
+        [Then(@"""(.*)"" should be added to your languages\.""(.*)"" will be displayed on top right of the application")]
+        public void ThenShouldBeAddedToYourLanguages_WillBeDisplayedOnTopRightOfTheApplication(string newLanguage, string message)
+        {
+            addLanguagePage.AssertLaguageAdded(newLanguage, message);
+        }
+
     }
 }

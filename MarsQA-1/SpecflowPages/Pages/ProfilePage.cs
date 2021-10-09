@@ -38,7 +38,6 @@ namespace MarsQA_1.SpecflowPages.Pages
         public ProfilePage(IWebDriver driver) : base(driver)
         {
             this.driver = driver;
-            //    Visit("http://localhost:5000/");
         }
 
         public void Login()
@@ -83,6 +82,17 @@ namespace MarsQA_1.SpecflowPages.Pages
             }
 
         }
+
+        public void UpdateAvailabilityType(string availabilityType)
+        {
+            Click(_availabilityTypeButton);
+
+            if (IsDisplayed(_availabilityTypeDropdown))
+            {
+                Type(_availabilityTypeDropdown, availabilityType);
+            }
+
+        }
         public void AssertAvailabilityType()
         {
 
@@ -94,9 +104,19 @@ namespace MarsQA_1.SpecflowPages.Pages
                 Assert.AreEqual(Find(_availabilityTypeText).Text, selectedAvailabilityType);
             }
         }
+        public void AssertAvailabilityType(string availabilityType,string expectedMsg)
+        {
+
+            if (IsDisplayed(_nsbox, 10))
+            {
+                Assert.AreEqual(Find(_nsbox).Text, expectedMsg);
+                TestContext.WriteLine(Find(_availabilityTypeText).Text);
+                Assert.AreEqual(Find(_availabilityTypeText).Text, availabilityType);
+            }
+        }
 
         public void UpdateName()
-        {
+        {                          //update random firstname and lastname
             Click(_nameicon);
 
             newFirstname = Name.First();
@@ -112,12 +132,37 @@ namespace MarsQA_1.SpecflowPages.Pages
 
             }
         }
+        public void UpdateName(string firstName, string lastName)
+        {                                         //update from Scenario
+            Click(_nameicon);
+
+            newFirstname = firstName;
+            newLastname = lastName;
+
+            if (IsDisplayed(_firstname, 10))
+            {
+                Find(_firstname).Clear();
+                Type(_firstname, newFirstname);
+                Find(_lastname).Clear();
+                Type(_lastname, newLastname);
+                Click(_save);
+            }
+        }
 
         public void AssertName()
         {
             if (IsTextDisplayed(_username, 10))
             {
                 Assert.AreEqual(Find(_username).Text, newFirstname+" "+newLastname);
+                TestContext.WriteLine(newFirstname);
+                TestContext.WriteLine(newLastname);
+            }
+        }
+        public void AssertName(string fullName)
+        {                               // Assert from Scenario
+            if (IsTextDisplayed(_username, 10))
+            {
+                Assert.AreEqual(Find(_username).Text, fullName);
                 TestContext.WriteLine(newFirstname);
                 TestContext.WriteLine(newLastname);
             }

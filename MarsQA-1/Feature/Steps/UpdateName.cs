@@ -21,6 +21,17 @@ namespace MarsQA_1.Feature
         {
             profilePage.AssertName();
         }
+        [When(@"seller enter firstname as ""(.*)"" and last name as""(.*)""")]
+        public void WhenSellerEnterFirstnameAsAndLastNameAs(string firstName, string lastName)
+        {
+            profilePage.UpdateName(firstName, lastName);
+        }
+
+        [Then(@"User name should be ""(.*)""")]
+        public void ThenUserNameShouldBe(string fullName)
+        {
+            profilePage.AssertName(fullName);
+        }
 
         [When(@"update null name")]
         public void WhenUpdateNullName()

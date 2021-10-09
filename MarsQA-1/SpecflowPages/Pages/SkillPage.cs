@@ -25,6 +25,11 @@ namespace MarsQA_1.SpecflowPages.Pages
         string newSkillName;
         string newSkillLevel;
 
+        private const string FileName = @"MarsQA-1\SpecflowTests\Data\Data.xlsx";
+        private const string SheetName = "Skill";
+        private const string SkillName = "Skill";
+        private const string SkillLevel = "Level";
+
         public SkillPage(IWebDriver driver) : base(driver)
         {
             this.driver = driver;
@@ -37,19 +42,28 @@ namespace MarsQA_1.SpecflowPages.Pages
 
             Click(_addnewskillbutton);
 
-            ExcelLibHelper.PopulateInCollection(@"MarsQA-1\SpecflowTests\Data\Data.xlsx", "Skill");
-            newSkillName = ExcelLibHelper.ReadData(skillCount + 2, "Skill");
-            newSkillLevel = ExcelLibHelper.ReadData(skillCount + 2, "Level");
+            ExcelLibHelper.PopulateInCollection(FileName, SheetName);
+            newSkillName = ExcelLibHelper.ReadData(skillCount + 2, SkillName);
+            newSkillLevel = ExcelLibHelper.ReadData(skillCount + 2, SkillLevel);
 
             Type(_skillname, newSkillName);
             Type(_skilllevel, newSkillLevel);
 
-            //var dropdown = Find(_languagelevel);
-            //var selectElement = new SelectElement(dropdown);
-            //selectElement.SelectByIndex(level);
+            Click(_skillAddbutton);
+        }
+        public void AddSkill(string newSkillName, string newSkillLevel)
+        {
+            IList<IWebElement> listOfElements = driver.FindElements(_skillList);
+            skillCount = listOfElements.Count;
+
+            Click(_addnewskillbutton);
+
+            Type(_skillname, newSkillName);
+            Type(_skilllevel, newSkillLevel);
 
             Click(_skillAddbutton);
         }
+
         public void AssertSkillAdded()
         {
             string actualMsg;
@@ -65,6 +79,23 @@ namespace MarsQA_1.SpecflowPages.Pages
                 TestContext.WriteLine(newSkill);
 
                 expectedMsg = newSkillName + " has been added to your skills";
+                actualMsg = Find(_nsbox).Text;
+                Assert.AreEqual(actualMsg, expectedMsg);
+            }
+        }
+
+        public void AssertSkillAdded(string newSkill,string expectedMsg)
+        {
+            string actualMsg;
+
+            if (IsDisplayed(_nsbox))
+            {
+                IList<IWebElement> listOfElements = driver.FindElements(_skillList);
+                skillCount = listOfElements.Count;
+
+                Assert.AreEqual(listOfElements[skillCount - 1].Text, newSkill+"   ");
+                TestContext.WriteLine(newSkill);
+
                 actualMsg = Find(_nsbox).Text;
                 Assert.AreEqual(actualMsg, expectedMsg);
             }
